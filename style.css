@@ -1,0 +1,522 @@
+/* Importa fontes do Google Fonts para uso no site */
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+/* Define regras para todos os elementos (*) */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Define o comportamento da rolagem (scroll) e esconde a barra de rolagem horizontal */
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+/* Largura da barra de rolagem */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Cor de fundo da barra de rolagem */
+::-webkit-scrollbar-track {
+  background-color: #34353b;
+}
+
+/* Cor do "thumb" (o indicador de posição) da barra de rolagem */
+::-webkit-scrollbar-thumb {
+  background-color: #c0c0c4;
+}
+
+/* Estilo de borda da barra de rolagem */
+::-webkit-scrollbar-thumb:hover {
+  background-color:#c0c0c4;
+}
+
+/* Define estilos para o corpo da página (body) */
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  background-color: #34353b;
+}
+
+/* Define estilos para o cabeçalho (header) */
+header {
+  height: 100vh;
+  padding: 36px 100px;
+  background-image: url(asset/images/20231019_165633\ \(1\).png);
+  background-position: right;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100vw;
+}
+
+/* //////////////////////////////////////////////////////////////////////////// */
+
+/* Define estilos para a barra de navegação (nav) no cabeçalho */
+header nav {
+  display: flex;
+  justify-content: center; /* Centralize horizontalmente */
+  align-items: center;
+  position: fixed;
+  width: 90%;
+  z-index: 99;
+  left: 5%; /* Alinhe com margem esquerda de 5% para centralizar */
+  right: 5%; /* Alinhe com margem direita de 5% para centralizar */
+}
+
+
+/* Define estilos para a lista não ordenada (ul) na barra de navegação */
+header nav ul {
+  display: flex;
+}
+
+/* Define estilos para os itens da lista (li) na barra de navegação */
+header nav ul li {
+  list-style: none;
+  margin: 0px 20px;
+}
+
+/* Define estilos para os links (a) na barra de navegação */
+header nav ul li a {
+  color: #98999a;
+  text-decoration: none;
+  transition: all ease 0.5s;
+}
+
+/* Define estilos para os links (a) quando hover (passa o mouse sobre eles) */
+header nav ul li a:hover {
+  color: #42C920;
+}
+
+/* Define estilos para o link ativo (.active) na barra de navegação */
+header nav ul li .active {
+  color: #42C920;
+}
+
+/* /////////////////////////////////////////////////////////////////////////// */
+
+
+/* Define estilos para a seção "landing" */
+.landing {
+  display: flex;
+  height: 90vh;
+  background-color: transparent;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Define estilos para a introdução na seção "landing" */
+.landing .intro {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Define estilos para o título (h3) na introdução */
+.landing .intro h3 {
+  color: #fbfbfb;
+  font-weight: 400;
+  font-size: 32px;
+  margin-left: 10vw;
+}
+
+/* Define estilos para a parte destacada do título */
+.landing .intro h3 span {
+  color: #42C920;
+  font-weight: 600;
+  font-size: 3.5rem;
+}
+
+/* ///////////////////////////////////////////////////////////////////// */
+
+/* Define estilos para a seção "socials" */
+.socials {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  margin-top: 50vh;
+}
+
+/* Define estilos para a linha (divisória) na seção "socials" */
+.socials .line {
+  background-color: #42C920;
+  height: 15vh;
+  width: 2.5px;
+}
+
+/* Tira a barra do link */
+.socials a {
+  text-decoration: none;
+}
+
+/* Define estilos para os ícones sociais na seção "socials" */
+.socials i {
+  color: #fbfbfb;
+  font-size: 36px;
+}
+
+/* ///////////////////////////////////////////////////////////////////////// */
+
+/* Define estilos para a seção "about" */
+.sobre {
+  height: 50vh;
+  width: 100vw;
+  padding: 100px;
+}
+
+/* Define estilos para o título (h1) na seção "sobre" */
+.sobre h1 {
+  font-size: 56px;
+  font-weight: 700;
+  color: #fbfbfb;
+  font-family: "Libre Baskerville", serif;
+}
+
+/* Define estilos para a descrição na seção "sobre" */
+.sobre .descricao {
+  display: flex;
+  align-items: start;
+}
+
+/* Define estilos para a linha na descrição na seção "sobre" */
+.sobre .descricao .line {
+  height: 2.5px;
+  width: 400px;
+  background-color: #42C920;
+  margin-right: 32px;
+}
+
+/* Define estilos para o parágrafo (p) na descrição na seção "sobre" */
+.sobre .descricao p {
+  color: #fbfbfb;
+  font-size: 20px;
+}
+
+
+/* ////////////////////////////////////////////////////////// */
+
+/* Define estilos para a seção "tecnologias" */
+.tecnologias {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 100px;
+  margin-top: 20rem;
+}
+
+/* Define estilos para o título (h1) na seção "tecnologias" */
+.tecnologias h1 {
+  font-size: 56px;
+  font-weight: 700;
+  color: #fbfbfb;
+  font-family: "Libre Baskerville", serif;
+}
+
+/* Define estilos para os cartões de habilidades na seção "tecnologias" */
+.cards {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 50px;
+  gap: 2.5vh;
+}
+
+/* Define estilos para cada cartão de habilidade */
+.tecnologia-card {
+  height: 20vw;
+  width: 20vw;
+  background-color: #3d3e42;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5vh;
+  transition: all ease 0.5s;
+}
+
+/* Define estilos para o cartão de habilidade quando hover */
+.tecnologia-card:hover {
+  background-color: #42C920;
+}
+
+/* Define estilos para a imagem no cartão de habilidade */
+.tecnologia-card img {
+  height: 7.5vw;
+  width: 7.5vw;
+  object-fit: contain;
+}
+
+/* Define estilos para o título (h2) no cartão de habilidade */
+.tecnologia-card h2 {
+  font-size: 24px;
+  font-weight: 400;
+  color: #fbfbfb;
+}
+
+/* Define estilos para o h2 quando hover */
+.tecnologia-card:hover h2 {
+  font-size: 24px;
+  font-weight: 400;
+  color: #3d3e42;
+}
+
+/* //////////////////////////////////////////////////////////////////////// */
+
+/* Define estilos para a seção "projeto" */
+.projeto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 100px;
+}
+
+/* Define estilos para o título (h1) na seção "projeto" */
+.projeto h1 {
+  font-size: 56px;
+  font-weight: 700;
+  color: #fbfbfb;
+  font-family: "Libre Baskerville", serif;
+}
+
+/* Define estilos para a grade de cartões no "projeto" */
+.projeto-cards {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  margin-top: 50px;
+  gap: 2.5vh;
+}
+
+/* Define estilos para cada cartão no "projeto" */
+.projeto-card {
+  position: relative;
+  height: 30vw;
+  width: 30vw;
+  background-color: #3d3e42;
+  border-radius: 20px;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5vh;
+  transition: all ease 0.5s;
+}
+
+/* Define estilos para a imagem no cartão do "projeto" */
+.projeto-card img {
+  position: relative;
+  height: 30vw;
+  width: 30vw;
+  object-fit: cover;
+}
+
+/* Define estilos para a sobreposição no cartão do "projeto" */
+.projeto-card .conteudo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  gap: 2.5vh;
+  height: 30vw;
+  width: 30vw;
+  background-color: #34353ba2;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  opacity: 0;
+  transition: all ease 0.5s;
+}
+
+/* Define estilos para o título (h3) na sobreposição do cartão do "projeto" */
+.projeto-card .conteudo h3 {
+  color: #fbfbfb;
+  font-size: 24px;
+}
+
+/* Define estilos para o parágrafo (p) na sobreposição do cartão do "projeto" */
+.projeto-card .conteudo p {
+  color: #fbfbfb;
+  font-size: 16px;
+  text-align: center;
+}
+
+/* Define estilos para o botão na sobreposição do cartão do "projeto" */
+.projeto-card .conteudo button {
+  height: 36px;
+  width: 108px;
+  background-color: #42C920;
+  border: 1px solid #42C920;
+  border-radius: 8px;
+  color: #34353b;
+  font-size: 12px;
+  transition: all ease 0.5s;
+  cursor: pointer;
+}
+
+/* Define estilos para a sobreposição do cartão quando hover */
+.projeto-card .conteudo:hover {
+  opacity: 1;
+}
+
+/* Define estilos para o botão no "projeto" */
+.projeto button {
+  margin-top: 50px;
+  height: 48px;
+  width: 144px;
+  background-color: #42C920;
+  border: 1px solid #42C920;
+  border-radius: 8px;
+  color: #34353b;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all ease 0.5s;
+}
+
+/* Define estilos para o botão no "projeto" quando hover */
+.projeto button:hover {
+  background-color: #42C920;
+}
+
+/* ///////////////////////////////////////////////////////////////////////////// */
+
+/* Define estilos para a seção "experiencia" */
+.experiencia {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Define estilos para a divisória escura no "experiencia" */
+.darker-div {
+  background-color: #34353a;
+  width: 100vw;
+  height: 15vh;
+}
+
+/* Define estilos para o título (h1) no "experiencia" */
+.experiencia h1 {
+  position: absolute;
+  color: #fbfbfb;
+  font-size: 56px;
+  font-family: "Libre Baskerville", serif;
+  transform: translate(-50%, -50%);
+  top: 10%;
+  left: 15%;
+}
+
+/* Define estilos para a divisória mais clara no "experiencia" */
+.lighter-div {
+  background-color: #3d3e42;
+  width: 100vw;
+  padding: 10vh;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+/* Define estilos para a experiência individual */
+.lighter-div .exp {
+  height: 30vh;
+  width: 50vw;
+  position: relative;
+  margin-left: 20vh;
+}
+
+/* Define estilos para o título (h2) da experiência individual */
+.exp h2 {
+  color: #fbfbfb;
+  font-size: 32px;
+  font-weight: 400;
+}
+
+/* Define estilos para o círculo antes do título */
+.exp h2::before {
+  content: "";
+  height: 20px;
+  width: 20px;
+  color: #42C920;
+  background-color: #42C920;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 7.5%;
+  left: -5%;
+  border-radius: 50%;
+  box-shadow: 0px 0px 20px 5px #42C920;
+}
+
+/* Define estilos para a linha vertical antes do texto na experiência individual */
+.exp-desc::before {
+  content: "";
+  height: 190px;
+  width: 2.5px;
+  background-color: #42C920;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 55%;
+  left: -5%;
+}
+
+/* Define estilos para o título (h3) na experiência individual */
+.exp-desc h3 {
+  color: #fbfbfb;
+  font-size: 20px;
+  font-weight: 400;
+  margin: 10px 0;
+}
+
+/* Define estilos para o parágrafo (p) na experiência individual */
+.exp-desc p {
+  color: #fbfbfb;
+  font-size: 16;
+  font-weight: 400;
+}
+
+/* ///////////////////////////////////////////////////////////////////////////// */
+
+/* Define estilos para a seção "contact-me" */
+.contact-me {
+  width: 100vw;
+  padding: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Define estilos para o título (h1) na seção "contact-me" */
+.contact-me h1 {
+  font-size: 56px;
+  color: #fbfbfb;
+  font-family: "Libre Baskerville", serif;
+  font-weight: 700;
+}
+
+/* Define estilos para a seção "contact" */
+.contact {
+  display: flex;
+  gap: 24px;
+}
+
+/* Define estilos para o cartão de contato */
+.contact-card {
+  background-color: #42C920;
+  padding: 10px;
+  border-radius: 8px;
+  display: flex;
+  gap: 10px;
+  margin-top: 7.5vh;
+  cursor: pointer;
+}
